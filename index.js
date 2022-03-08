@@ -126,7 +126,7 @@ function squareroot(x) {
     return Math.sqrt(x);
 }
 
-//for backsapce and enter button
+//for backsapce button
 document.addEventListener("keydown", function (event) {
     const key = event.key;
     console.log(key);
@@ -137,18 +137,6 @@ document.addEventListener("keydown", function (event) {
         if (f == '/' || f == '+' || f == '-' || f == '*' || f == '%')
             decimalcount = 1;
         document.querySelector(".input-field").value = document.querySelector(".input-field").value.slice(0, -1);
-    }
-
-    else if (key == 'Enter') {
-        try {
-            decimalcount = 1;
-            var output = eval(document.querySelector(".input-field").value);
-            output = output.toFixed(2);
-            document.querySelector(".input-field").value = output;
-        }
-        catch (ex) {
-            document.querySelector(".input-field").value = 'Undefined';
-        }
     }
 })
 
