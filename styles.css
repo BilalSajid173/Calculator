@@ -6,7 +6,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0;
-  padding: 3% 15%;
+  /* padding: 3% 15%; */
   background-color: rgb(37, 48, 48);
 }
 
@@ -23,8 +23,8 @@ p {
 
 h1 {
   color: beige;
-  margin-top: 0;
-  margin-bottom: 40px;
+  /* margin-top: 0;
+  margin-bottom: 40px; */
   text-decoration: underline;
 }
 
@@ -59,7 +59,6 @@ h1 {
   width: 300px;
   padding: 20px;
   background-color: rgb(58, 37, 37);
-  margin: 0 auto;
   border-radius: 15px;
   -moz-box-shadow: 0 0 10px rgb(110, 60, 60);
   -webkit-box-shadow: 0 0 10px rgb(121, 70, 70);
@@ -163,7 +162,7 @@ h1 {
 
 /***********************************Media Queries************************************/
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .btn {
     height: 45px;
     width: 50px;
@@ -175,10 +174,35 @@ h1 {
     height: 40px;
     width: 80px;
     border-radius: 25px;
-    background-color: rgb(25, 25, 70);
+    /* background-color: rgb(25, 25, 70); */
   }
 
   .main-div {
     width: 250px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .btn {
+    height: 37px;
+    width: 42px;
+    font-size: 13px;
+    margin: 2px;
+  }
+
+  .equal {
+    height: 30px;
+    width: 60px;
+    border-radius: 25px;
+    /* background-color: rgb(25, 25, 70); */
+  }
+
+  .main-div {
+    width: 200px;
+  }
+
+  h1{
+    font-size: 20px;
   }
 }
