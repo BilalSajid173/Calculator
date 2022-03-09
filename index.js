@@ -30,6 +30,7 @@ function myFunction(x) {
             operatorfn(x);
             break;
         case 'C':
+            decimalcount = 0;
             document.querySelector(".input-field").value = "";
             break;
         case '=':
@@ -41,6 +42,7 @@ function myFunction(x) {
                 document.querySelector(".input-field").value = output;
             }
             catch (ex) {
+                decimalcount = 0;
                 document.querySelector(".input-field").value = 'Undefined';
             }
             break;
